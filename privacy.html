@@ -5,11 +5,49 @@
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
         <title>Business | Privacy policy</title>
     </head>
     <body class="bg-dark">
-        <section class="comingsoon-s1 d-flex align-items-center minh-footer-adj py-5">
+        <header class="position-absolute w-100">
+            <nav class="navbar navbar-dark px-2 align-items-start">
+                <a href="index.html" class="navbar-brand">
+                    <img class="img-fluid" src="img/logo.png" alt="logo"/>
+                </a>
+                <div>
+                    <button class="btn btn-outline-secondary text-white me-3" data-bs-toggle="offcanvas" data-bs-target="#mainnav">
+                        <span class="fa fa-navicon"></span>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-secondary text-white">
+                        <span class="fa fa-user-circle"></span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <aside class="offcanvas offcanvas-start bg-dark" id="mainnav">
+            <div class="offcanvas-header h-25 mt-3 align-items-start">
+                <img class="img-fluid" src="img/logo.png" alt="logo"/>
+                <button class="bg-light btn-close rounded-circle" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-uppercase text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a class="nav-link text-white" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="privacy-s1 d-flex align-items-center minh-footer-adj py-5">
             <div class="row w-100 mx-0 mt-5">
                 <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto">
                     <div class="card text-center text-white bg-dark border-secondary shadow opacity-9">
@@ -55,17 +93,19 @@
                 </div>
             </div>
         </section>
-        <footer class="container-fluid d-flex align-items-center p-2">
-            <div class="row w-100 mx-0">
-                <div class="col-12 text-center small text-white">
+        <footer class="container-fluid d-flex align-items-center border-top border-dark bg-blue p-2">
+            <div class="row w-100 mx-0">                
+                <div class="col-12 text-center small text-info">
                     <small>
                         Copyright &copy;2022 Tomasz Pankowski.
-                        <a href="privacy.html" class="text-white text-decoration-none ms-1">
-                            Privacy policy.
+                        <a href="privacy.html" class="text-info text-decoration-none ms-1">
+                            Privacy&nbsp;policy.
                         </a>
                     </small>
                 </div>
             </div>
         </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
