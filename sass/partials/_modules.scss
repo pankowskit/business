@@ -1,11 +1,169 @@
-//@include aoa-bg-series($bg__init,$classes_init);
+@media all and (min-width:1357px) and (orientation:landscape ){
+    @include aoa-bg-series($bg__init,$classes_init--lg);
+    @include aoa-bg-series($bg__media,$bg_media--lg);
+    .box-left{  
+        bottom:0;
+        left:0;
+        line-height: .8;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        position: absolute;
+        width: 26%;
+    }
+    .box-right{  
+        bottom:0;
+        margin-right: 7%;
+        position: absolute;
+        right:0;    
+        text-shadow: $text-shadow; 
+    }
+}
 
+@media all and (max-width: 1356px) and  (orientation:portrait ){
+    @include aoa-bg-series($bg__init,$classes_init--xs);
+    @include aoa-bg-series($bg__media,$bg_media--xs);
+    .box-left{  
+        bottom:0;
+        left:0;
+        line-height: .8;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        position: absolute;
+        width: 26%;
+    }
+    .box-right{  
+        bottom:40%;
+        margin-right: 3%;
+        position: absolute;
+        right:0;
+        text-shadow: $text-shadow; 
+    }
+}
+@media all and (min-width:1357px) and (orientation:portrait ){
+    @include aoa-bg-series($bg__init,$classes_init--xs);
+    @include aoa-bg-series($bg__media,$bg_media--xs);
+    .box-left{  
+        bottom:0;
+        left:0;
+        line-height: .8;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        position: absolute;
+        width: 26%;
+    }
+    .box-right{  
+        bottom:40%;
+        margin-right: 3%;
+        position: absolute;
+        right:0;
+        text-shadow: $text-shadow; 
+    }
+}
+
+@media all and (max-width: 1356px) and  (orientation:landscape ){
+    @include aoa-bg-series($bg__init,$classes_init--lg);
+    @include aoa-bg-series($bg__media,$bg_media--lg);
+    .box-left{  
+        bottom:0;
+        left:0;
+        line-height: .8;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        position: absolute;
+        width: 26%;
+    }
+    .box-right{  
+        bottom:0;
+        margin-right: 7%;
+        position: absolute;
+        right:0;    
+        text-shadow: $text-shadow; 
+    }
+}
+
+@media all and (max-width: 575px){
+    .box-left *{  
+        font-size: .5rem!important;
+    }
+    .box-right *{  
+        font-size: 1.5rem!important; 
+    }
+}
+@media all and (min-width: 576px){
+    .box-left *{  
+        font-size: .5rem!important;
+    }
+    .box-right *{  
+        font-size: 1.7rem!important; 
+    }
+}
+@media all and (min-width: 768px){
+    .box-left *{  
+        font-size: .8rem!important;
+    }
+    .box-right *{  
+        font-size: 2.5rem!important; 
+    }
+}
+.about{
+    &-s1{
+        background-color: #aaa!important;
+        background-blend-mode: multiply!important;
+        .carousel-indicators{
+            li{
+                border-radius: 30%;
+                height: 30px!important;
+                width: 12px!important;
+            }
+            display: block!important;
+            position: fixed!important;
+            left: auto!important;
+            right: 10px!important;
+            bottom: 30%!important;
+            padding: 0!important;
+            margin: 0px !important;
+            list-style: none!important;
+        }
+    }
+}
+.bg{
+    &-blue{
+        background-color: $color__blue;
+    }
+}
 .comingsoon-s1{
     background-blend-mode: multiply;
+}
+.contact{
+    &-s1{
+        background-color: #999!important;
+        background-blend-mode: multiply!important;
+    }
 }
 .error-s1{
     background-blend-mode: multiply;
 }
+.offcanvas{
+    background-image: linear-gradient(180deg, black 50%, $color__blue);
+    opacity: 0.8;
+}
 .privacy-s1{
     background-blend-mode: multiply;
+}
+.services{
+    &-s1{
+        background-color: #aaa!important;
+        background-blend-mode: multiply!important;
+    }
+}
+.text{
+    &-blue{
+        color: $color__blue;
+    }
+    &-shadow{
+        text-shadow: $text-shadow;
+    }
+}
+textarea{
+    resize:none;
 }

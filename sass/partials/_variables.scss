@@ -1,15 +1,50 @@
-/*
-$prefix: "../../../assets/";
-$bg__error-img: $prefix+"img/error.jpg";
-$bg__comingsoon-img: $prefix+"img/coming.jpg";
-$bg__privacy-img: $prefix+"img/privacy.jpg";
+$prefix: "../img/";
+$bg__about-img--lg: $prefix+"about/about-lg-s1.jpg";
+$bg__about-img--xs: $prefix+"about/about-xs-s1.jpg";
+$bg__comingsoon-img--lg: $bg__about-img--lg;
+$bg__comingsoon-img--xs: $bg__about-img--xs;
+$bg__contact-img--lg: $prefix+"contact/contact-lg-s1.jpg";
+$bg__contact-img--xs: $prefix+"contact/contact-xs-s1.jpg";
+$bg__error-img--lg: $bg__contact-img--lg;
+$bg__error-img--xs: $bg__contact-img--xs;
+$bg__index-img--lg: $prefix+"index/index-lg-s1.jpg";
+$bg__index-img--xs: $prefix+"index/index-xs-s1.jpg";
+$bg__login-img--lg: $bg__index-img--lg;
+$bg__login-img--xs: $bg__index-img--xs;
+$bg__privacy-img--lg: $bg__index-img--lg;
+$bg__privacy-img--xs: $bg__index-img--xs;
+$bg__services-img--lg: $prefix+"services/services-lg-s1.jpg";
+$bg__services-img--xs: $prefix+"services/services-xs-s1.jpg";
 $bg__init:
-    "error",
     "comingsoon",
+    "error",
     "privacy";
-$classes_init:
-    $bg__error-img,
-    $bg__comingsoon-img,
-    $bg__privacy-img;
-*/
-$footer-height: 41px;
+$classes_init--lg:
+    $bg__comingsoon-img--lg,
+    $bg__error-img--lg,
+    $bg__privacy-img--lg;
+$classes_init--xs:
+    $bg__comingsoon-img--xs,
+    $bg__error-img--xs,
+    $bg__privacy-img--xs;
+$bg__media:
+    "about",
+    "contact",
+    "index",
+    "login",
+    "services";
+$bg_media--lg: 
+    $bg__about-img--lg,
+    $bg__contact-img--lg,
+    $bg__index-img--lg,
+    $bg__login-img--lg,
+    $bg__services-img--lg;
+$bg_media--xs: 
+    $bg__about-img--xs,
+    $bg__contact-img--xs,
+    $bg__index-img--xs,
+    $bg__login-img--xs,
+    $bg__services-img--xs;
+$footer-height: 38px;
+$color__blue: #003860;
+$text-shadow: 1px 1px 3px #333;

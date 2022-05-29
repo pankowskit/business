@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <title>Business | Login</title>
+    </head>
+    <body class="bg-dark">
+        <header class="position-absolute w-100">
+            <nav class="navbar navbar-dark px-2 align-items-start">
+                <a href="index.html" class="navbar-brand">
+                    <img class="img-fluid" src="img/logo.png" alt="logo"/>
+                </a>
+                <div>
+                    <button class="btn btn-outline-light text-white me-3" data-bs-toggle="offcanvas" data-bs-target="#mainnav">
+                        <span class="fa fa-navicon"></span>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-light text-white">
+                        <span class="fa fa-user-circle"></span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <aside class="offcanvas offcanvas-start bg-dark" id="mainnav">
+            <div class="offcanvas-header h-25 mt-3 align-items-start">
+                <img class="img-fluid" src="img/logo.png" alt="logo"/>
+                <button class="bg-light btn-close rounded-circle" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-uppercase text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a class="nav-link text-white" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a class="nav-link text-white" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <section class="login-s1 container-fluid min-vh-100 d-flex align-items-center py-5">
+                <div class="row mx-0 w-100 pt-5 mt-5">
+                    <div class="col-10 col-sm-6 col-md-5 col-lg-4 mx-auto">
+                        <div class="card bg-blue text-white">
+                            <div class="card-header">
+                                <h6 class="text-white text-uppercase my-1">
+                                    Login
+                                </h6>
+                            </div>
+                            <div class="card-body">
+                                <form class="text-start px-3" 
+                                    autocomplete="off"
+                                    action=""
+                                    method="POST">
+                                    <div class="form-group mb-3">
+                                        <label class="text-white mb-2 ms-1">Login</label>
+                                        <input class="form-control rounded-pill opacity-9" 
+                                            type="text" 
+                                            name="username" 
+                                            placeholder="User login"
+                                            maxlength="80"
+                                            tabindex="1"/>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label class="text-white mb-2 ms-1">Password</label>
+                                        <input class="form-control rounded-pill opacity-9" 
+                                            type="password" 
+                                            name="userpass" 
+                                            placeholder="Enter password"
+                                            maxlength="80"
+                                            tabindex="2"/>
+                                    </div>
+                                    <div class="w-100 text-end py-3">
+                                        <input type="reset" 
+                                            class="btn btn-outline-light rounded-pill me-1" 
+                                            value="Clear"
+                                            tabindex="4"/>
+                                        <input type="submit" 
+                                            class="btn btn-outline-light rounded-pill" 
+                                            name="login"
+                                            value="Login"
+                                            tabindex="3"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>   
+        <footer class="container-fluid d-flex align-items-center border-top border-dark bg-blue p-2">
+            <div class="row w-100 mx-0">                
+                <div class="col-12 text-center small text-info">
+                    <small>
+                        Copyright &copy;2022 Tomasz Pankowski.
+                        <a href="privacy.html" class="text-info text-decoration-none ms-1">
+                            Privacy&nbsp;policy.
+                        </a>
+                    </small>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
